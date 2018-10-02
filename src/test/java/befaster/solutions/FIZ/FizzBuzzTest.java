@@ -25,14 +25,14 @@ public class FizzBuzzTest {
         Assert.assertEquals("2", solution.fizzBuzz(2));
     }
     @Test
-    public void testHasDigit_3_NotDivisible_ReturnsNumber() throws Exception {
+    public void testHasDigit_3_NotDivisible_ReturnsFizz() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
-        Assert.assertEquals("23", solution.fizzBuzz(23));
+        Assert.assertEquals("fizz", solution.fizzBuzz(23));
     }
     @Test
-    public void testHasDigit_5_ReturnsBuzz() throws Exception {
+    public void testHasDigit_5_NotDivisible_ReturnsBuzz() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
-        Assert.assertEquals("buzz", solution.fizzBuzz(52));
+        Assert.assertEquals("buzz", solution.fizzBuzz(511));
     }
     @Test
     public void testHasDigits_5_And_3_ReturnsFizzBuzz() throws Exception {

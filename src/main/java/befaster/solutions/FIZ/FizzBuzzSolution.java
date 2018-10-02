@@ -14,6 +14,22 @@ public class FizzBuzzSolution {
             }
             answer += "buzz";
         }
+        if(number > 10) {
+            String digits = number.toString();
+            boolean deluxe = true;
+            Character firstDigit = digits.charAt(0);
+            for(int i=0; i < digits.length(); i++) {
+                if(digits.charAt(i) != firstDigit) {
+                    deluxe = false;
+                }
+            }
+            if(deluxe) {
+                if(answer.length() > 0) {
+                    answer += " ";
+                }
+                answer += "deluxe";
+            }
+        }
         if(answer.length() == 0) {
             return number.toString();
         }

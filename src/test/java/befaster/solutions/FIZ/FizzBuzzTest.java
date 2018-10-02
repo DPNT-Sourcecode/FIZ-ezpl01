@@ -40,33 +40,28 @@ public class FizzBuzzTest {
         Assert.assertEquals("fizz buzz", solution.fizzBuzz(53));
     }
     @Test
-    public void testGreaterThanTen_NotDivisibleByFiveOrThree_ReturnsNumber() throws Exception {
+    public void testNotDivisibleByFiveOrThree_ReturnsNumber() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
         Assert.assertEquals("22", solution.fizzBuzz(22));
     }
     @Test
-    public void testOddNumberGreaterThanTen_WithAllSameDigits_ReturnsFakeDeluxe() throws Exception {
+    public void testOddNumber_WithThree_ReturnsFakeDeluxe() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
-        Assert.assertEquals("fake deluxe", solution.fizzBuzz(11));
+        Assert.assertEquals("fizz fake deluxe", solution.fizzBuzz(33));
     }
     @Test
-    public void testEvenNumberGreaterThanTen_WithAllSameDigits_ReturnsFizzDeluxe() throws Exception {
+    public void testOddNumber_WithFive_ReturnsBuzzFakeDeluxe() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
-        Assert.assertEquals("fizz deluxe", solution.fizzBuzz(66));
-    }
-    @Test
-    public void testDivisibleByThreeAndContainsAThree_ReturnsFizzDeluxe() throws Exception {
-        FizzBuzzSolution solution = new FizzBuzzSolution();
-        Assert.assertEquals("fizz deluxe", solution.fizzBuzz(33));
-    }
-    @Test
-    public void testDivisibleByFiveAndContainsAFive_ReturnsBuzzDeluxe() throws Exception {
-        FizzBuzzSolution solution = new FizzBuzzSolution();
-        Assert.assertEquals("buzz deluxe", solution.fizzBuzz(55));
+        Assert.assertEquals("buzz fake deluxe", solution.fizzBuzz(55));
     }
     @Test
     public void testFizzBuzzDeluxe() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
         Assert.assertEquals("fizz buzz fake deluxe", solution.fizzBuzz(555));
+    }
+    @Test
+    public void testEvenNumber_FizzBuzzNumber_ReturnsFizzBuzzDeluxe() throws Exception {
+        FizzBuzzSolution solution = new FizzBuzzSolution();
+        Assert.assertEquals("fizz buzz deluxe", solution.fizzBuzz(66));
     }
 }

@@ -17,7 +17,7 @@ public class FizzBuzzTest {
     @Test
     public void testDivisibleByThreeAndFiveReturnsFizzBuzz() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
-        Assert.assertEquals("fizz buzz", solution.fizzBuzz(15));
+        Assert.assertEquals("fizz buzz", solution.fizzBuzz(60));
     }
     @Test
     public void testNotDivisibleByThreeOrFiveReturnsNumber() throws Exception {
@@ -25,9 +25,9 @@ public class FizzBuzzTest {
         Assert.assertEquals("2", solution.fizzBuzz(2));
     }
     @Test
-    public void testHasDigit_3_ReturnsFizz() throws Exception {
+    public void testHasDigit_3_NotDivisible_ReturnsNumber() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
-        Assert.assertEquals("fizz", solution.fizzBuzz(23));
+        Assert.assertEquals("23", solution.fizzBuzz(23));
     }
     @Test
     public void testHasDigit_5_ReturnsBuzz() throws Exception {

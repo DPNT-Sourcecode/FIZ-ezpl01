@@ -9,6 +9,6 @@ public class HloSolutionTest {
     public void helloTest() throws Exception {
         HelloSolution helloSolution = new HelloSolution();
         String feedback = helloSolution.hello("Friend");
-        Assert.assertEquals("Hello, world!", feedback);
+        Assert.assertEquals("Hello, World!", feedback);
     }
 }

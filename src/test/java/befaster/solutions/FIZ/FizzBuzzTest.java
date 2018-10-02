@@ -34,4 +34,9 @@ public class FizzBuzzTest {
         FizzBuzzSolution solution = new FizzBuzzSolution();
         Assert.assertEquals("buzz", solution.fizzBuzz(52));
     }
+    @Test
+    public void testFizzBuzzDigit() throws Exception {
+        FizzBuzzSolution solution = new FizzBuzzSolution();
+        Assert.assertEquals("fizz buzz", solution.fizzBuzz(53));
+    }
 }

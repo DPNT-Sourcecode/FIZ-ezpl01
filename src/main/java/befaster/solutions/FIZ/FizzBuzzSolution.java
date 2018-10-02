@@ -27,6 +27,9 @@ public class FizzBuzzSolution {
                 if(answer.length() > 0) {
                     answer += " ";
                 }
+                if(number % 2 > 0) {
+                    answer += "fake ";
+                }
                 answer += "deluxe";
             }
         }

@@ -57,12 +57,12 @@ public class FizzBuzzTest {
     @Test
     public void testFizzFakeDeluxe() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
-        Assert.assertEquals("fizz fake deluxe", solution.fizzBuzz(33));
+        Assert.assertEquals("fizz deluxe", solution.fizzBuzz(33));
     }
     @Test
     public void testBuzzFakeDeluxe() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
-        Assert.assertEquals("buzz fake deluxe", solution.fizzBuzz(55));
+        Assert.assertEquals("buzz deluxe", solution.fizzBuzz(55));
     }
     @Test
     public void testFizzBuzzDeluxe() throws Exception {

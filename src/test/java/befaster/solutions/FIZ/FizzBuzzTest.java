@@ -5,62 +5,62 @@ import org.junit.Test;
 
 public class FizzBuzzTest {
     @Test
-    public void testFizz() throws Exception {
+    public void testDivisibleByThreeReturnsFizz() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
         Assert.assertEquals("fizz", solution.fizzBuzz(3));
     }
     @Test
-    public void testBuzz() throws Exception {
+    public void testDivisibleByFiveReturnsBuzz() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
         Assert.assertEquals("buzz", solution.fizzBuzz(5));
     }
     @Test
-    public void testFizzBuzz() throws Exception {
+    public void testDivisibleByThreeAndFiveReturnsFizzBuzz() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
         Assert.assertEquals("fizz buzz", solution.fizzBuzz(15));
     }
     @Test
-    public void testNotFizzOrBuzz() throws Exception {
+    public void testNotDivisibleByThreeOrFiveReturnsNumber() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
         Assert.assertEquals("2", solution.fizzBuzz(2));
     }
     @Test
-    public void testFizzDigit() throws Exception {
+    public void testHasDigit_3_ReturnsFizz() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
         Assert.assertEquals("fizz", solution.fizzBuzz(23));
     }
     @Test
-    public void testBuzzDigit() throws Exception {
+    public void testHasDigit_5_ReturnsBuzz() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
         Assert.assertEquals("buzz", solution.fizzBuzz(52));
     }
     @Test
-    public void testFizzBuzzDigit() throws Exception {
+    public void testHasDigits_5_And_3_ReturnsFizzBuzz() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
         Assert.assertEquals("fizz buzz", solution.fizzBuzz(53));
     }
     @Test
-    public void testDeluxe() throws Exception {
+    public void testGreaterThanTen_NotDivisibleByFiveOrThree_ReturnsNumber() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
-        Assert.assertEquals("deluxe", solution.fizzBuzz(22));
+        Assert.assertEquals("22", solution.fizzBuzz(22));
     }
     @Test
-    public void testFakeDeluxe() throws Exception {
+    public void testOddNumberGreaterThanTen_WithAllSameDigits_ReturnsFakeDeluxe() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
         Assert.assertEquals("fake deluxe", solution.fizzBuzz(11));
     }
     @Test
-    public void testFizzDeluxe() throws Exception {
+    public void testEvenNumberGreaterThanTen_WithAllSameDigits_ReturnsFizzDeluxe() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
         Assert.assertEquals("fizz deluxe", solution.fizzBuzz(66));
     }
     @Test
-    public void testFizzFakeDeluxe() throws Exception {
+    public void testDivisibleByThreeAndContainsAThree_ReturnsFizzDeluxe() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
         Assert.assertEquals("fizz deluxe", solution.fizzBuzz(33));
     }
     @Test
-    public void testBuzzFakeDeluxe() throws Exception {
+    public void testDivisibleByFiveAndContainsAFive_ReturnsBuzzDeluxe() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
         Assert.assertEquals("buzz deluxe", solution.fizzBuzz(55));
     }

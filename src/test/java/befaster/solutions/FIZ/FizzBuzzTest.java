@@ -42,7 +42,12 @@ public class FizzBuzzTest {
     @Test
     public void testDeluxe() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
-        Assert.assertEquals("deluxe", solution.fizzBuzz(11));
+        Assert.assertEquals("deluxe", solution.fizzBuzz(22));
+    }
+    @Test
+    public void testFakeDeluxe() throws Exception {
+        FizzBuzzSolution solution = new FizzBuzzSolution();
+        Assert.assertEquals("fake deluxe", solution.fizzBuzz(11));
     }
     @Test
     public void testFizzDeluxe() throws Exception {

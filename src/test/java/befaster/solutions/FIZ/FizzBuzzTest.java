@@ -7,12 +7,12 @@ public class FizzBuzzTest {
     @Test
     public void testDivisibleByThreeReturnsFizz() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
-        Assert.assertEquals("fizz", solution.fizzBuzz(3));
+        Assert.assertEquals("fizz", solution.fizzBuzz(6));
     }
     @Test
     public void testDivisibleByFiveReturnsBuzz() throws Exception {
         FizzBuzzSolution solution = new FizzBuzzSolution();
-        Assert.assertEquals("buzz", solution.fizzBuzz(5));
+        Assert.assertEquals("buzz", solution.fizzBuzz(10));
     }
     @Test
     public void testDivisibleByThreeAndFiveReturnsFizzBuzz() throws Exception {

@@ -44,4 +44,14 @@ public class FizzBuzzTest {
         FizzBuzzSolution solution = new FizzBuzzSolution();
         Assert.assertEquals("deluxe", solution.fizzBuzz(11));
     }
+    @Test
+    public void testFizzDeluxe() throws Exception {
+        FizzBuzzSolution solution = new FizzBuzzSolution();
+        Assert.assertEquals("fizz deluxe", solution.fizzBuzz(33));
+    }
+    @Test
+    public void testBuzzDeluxe() throws Exception {
+        FizzBuzzSolution solution = new FizzBuzzSolution();
+        Assert.assertEquals("buzz deluxe", solution.fizzBuzz(55));
+    }
 }
